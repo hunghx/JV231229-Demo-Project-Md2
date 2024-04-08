@@ -9,7 +9,7 @@ import ra.prjmd2.utils.IOFile;
 import java.util.Comparator;
 import java.util.List;
 
-public class AuthenService implements IAuthication {
+public class AuthenticationService implements IAuthication {
     private static List<User> userList ;
     static {
         userList = IOFile.readFromFile(IOFile.USER_PATH);

@@ -1,6 +1,10 @@
 package ra.prjmd2.business.entity;
 
-public class User {
+import ra.prjmd2.utils.InputMethods;
+
+import java.io.Serializable;
+
+public class User implements Serializable {
     private int id;
     private String username;
     private String password;
@@ -86,5 +90,20 @@ public class User {
 
     public void setRole(RoleName role) {
         this.role = role;
+    }
+    public void inputUsername(){
+        this.username = InputMethods.getString();
+    }
+    public void inputPassword(){
+        this.password = InputMethods.getString();
+    }
+    public void inputEmail(){
+        this.email = InputMethods.getString();
+    }
+    public void inputPhoneNumber(){
+        this.phone = InputMethods.getString();
+    }
+    public void inputFullname(){
+        this.fullName = InputMethods.getString();
     }
 }
